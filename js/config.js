@@ -1,4 +1,4 @@
-// 全局常量配置
+﻿// 全局常量配置
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
@@ -23,12 +23,48 @@ const SITE_CONFIG = {
 const API_SITES = {
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com',
-        name: '电影天堂资源',
+        name: '天堂资源',
         detail: 'http://caiji.dyttzyapi.com',
+    },
+       ffzy: {
+        api: 'http://api.ffzyapi.com',
+        name: '非凡资源',
+        detail: 'http://ffzy5.tv',
+    },
+      liangzi: {
+        api: 'https://cj.lziapi.com',
+        name: '量子资源',
+        detail: 'http://ffzy5.tv',
+    },
+      zuid: {
+        api: 'https://api.zuidapi.com',
+        name: '最大资源'
+    },
+       wolong: {
+        api: 'https://wolongzyw.com',
+        name: '卧龙资源',
+    },
+      wujin: {
+        api: 'https://api.wujinapi.me',
+        name: '无尽资源'
     },
     ruyi: {
         api: 'https://cj.rycjapi.com',
         name: '如意资源',
+    },
+      heimuer: {
+        api: 'https://json.heimuer.xyz',
+        name: '黑木耳巴',
+        detail: 'https://heimuer.tv',
+    },
+      jisu: {
+        api: 'https://jszyapi.com',
+        name: '极速资源',
+        detail: 'https://jszyapi.com'
+    },
+    dbzy: {
+        api: 'https://dbzy.com',
+        name: '豆瓣资源',
     },
     bfzy: {
         api: 'https://bfzyapi.com',
@@ -38,40 +74,22 @@ const API_SITES = {
         api: 'https://tyyszy.com',
         name: '天涯资源',
     },
-    // xiaomaomi: {
-    //     api: 'https://zy.xiaomaomi.cc',
-    //     name: '小猫咪资源',
-    // },
-    ffzy: {
-        api: 'http://ffzy5.tv',
-        name: '非凡影视',
-        detail: 'http://ffzy5.tv',
-    },
-    heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
-        detail: 'https://heimuer.tv',
+    xiaomaomi: {
+        api: 'https://zy.xiaomaomi.cc',
+        name: '猫咪资源',
     },
     zy360: {
         api: 'https://360zy.com',
         name: '360资源',
     },
-    wolong: {
-        api: 'https://wolongzyw.com',
-        name: '卧龙资源',
-    },
     hwba: {
         api: 'https://cjhwba.com',
-        name: '华为吧资源',
-    },
-    jisu: {
-        api: 'https://jszyapi.com',
-        name: '极速资源',
-        detail: 'https://jszyapi.com'
-    },
-    dbzy: {
-        api: 'https://dbzy.com',
-        name: '豆瓣资源',
+        name: '华为云巴',
+    }, 
+    huya: {
+        api: 'https://www.huyaapi.com',
+        name: '虎牙资源',
+        detail: 'https://www.huyaapi.com',
     },
     mozhua: {
         api: 'https://mozhuazy.com',
@@ -80,23 +98,15 @@ const API_SITES = {
     mdzy: {
         api: 'https://www.mdzyapi.com',
         name: '魔都资源',
-    },
-    zuid: {
-        api: 'https://api.zuidapi.com',
-        name: '最大资源'
-    },
+    },  
     yinghua: {
         api: 'https://m3u8.apiyhzy.com',
         name: '樱花资源'
     },
     baidu: {
         api: 'https://api.apibdzy.com',
-        name: '百度云资源'
-    },
-    wujin: {
-        api: 'https://api.wujinapi.me',
-        name: '无尽资源'
-    },
+        name: '百度资源'
+    }, 
     wwzy: {
         api: 'https://wwzy.tv',
         name: '旺旺短剧'
@@ -107,7 +117,7 @@ const API_SITES = {
     },
     testSource: {
         api: 'https://www.example.com',
-        name: '空内容测试源',
+        name: '空测试源',
         adult: true
     },
     // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
